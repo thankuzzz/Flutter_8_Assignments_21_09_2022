@@ -6,14 +6,11 @@ class Derived extends Base{
 
 }
 main(){
-  Derived d;
+  Derived d="error" as Derived;
   try{
     throw d;
-  }catch (base b){
-    print("Caught base Exception");
-  }
-  catch (Derived d){
-    print("Caught Derived Exception");
+  }catch (base ,b){
+  print("Caught base Exception");
   }
   return 0;
 }
