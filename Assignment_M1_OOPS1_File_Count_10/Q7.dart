@@ -8,9 +8,10 @@ class Saving_Account{
   }
   calculate_monthly_interest(){
     monthly_interest=(saving_balance!*annualinterestrate!)/12;
+    saving_balance=monthly_interest!+saving_balance!;
   }
   display_balance(){
-    print("Monthly Interest : $monthly_interest");
+    print("Monthly Interest  : $saving_balance");
   }
 }
 Test_Saving_Account(){
