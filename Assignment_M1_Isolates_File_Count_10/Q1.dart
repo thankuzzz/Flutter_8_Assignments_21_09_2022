@@ -4,5 +4,5 @@ sayhii(var msg){
   print(" Hello ");
 }
 main(){
-  Isolate.spawn(sayhii,"");
+  Isolate.spawn(sayhii," ");
 }
